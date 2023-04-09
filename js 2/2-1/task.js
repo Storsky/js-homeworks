@@ -1,13 +1,16 @@
-const fallItem = document.querySelectorAll('.menu__link')
-
+const fallItem = document.querySelectorAll('.menu__item')
 fallItem.forEach(item => {
     item.onclick = () => {
-        if (item.nextElementSibling) {
-            child_menu = item.nextElementSibling
-            child_menu.className = 'menu menu_sub menu_active'
-            return false
+        let isSub = item.querySelector('.menu_sub') 
+        if (isSub) {
+            if (isSub.classList.contains('menu_active')) {
+                isSub.classList.remove('menu_active')
+                return false
+            } else {
+                isSub.classList.add('menu_active')
+                return false
+            }
+
         }
-    
-        
     }
 });
