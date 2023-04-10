@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Онлайн-читалка</title>
+    <title>Вкладки</title>
     <link rel="stylesheet" href="task.css">
     <link rel="stylesheet" href="../../assets/css/style.css">
 </head>
@@ -15,39 +15,37 @@
           <a href="https://netology.ru/" class="logo__link"></a>
         </div>
         <h1 class="header__title">
-            Домашнее задание к занятию 2.1 «DOM». Онлайн-читалка.
+            Домашнее задание к занятию 1.3 «Объект события». Управление вкладками.
         </h1>
     </header>
-    <div class="book" id="book">
-        <div class="book__controls">
-            <div class="book__control book__control_font-size">
-                <a href="" class="font-size font-size_small" data-size="small">A</a>
-                <a href="" class="font-size font-size_active">A</a>
-                <a href="" class="font-size font-size_big" data-size="big">A</a>
+    <div class="tabs" id="tabs1">
+        <div class="tab__navigation">
+            <div class="tab tab_active">
+                Главная
             </div>
-            <div class="book__control book__control_color">
-                <span class="color__title">Текст:</span>
-                <a href="" class="color text_color_black color_active" data-text-color="black"></a>
-                <a href="" class="color text_color_gray" data-text-color="gray"></a>
-                <a href="" class="color text_color_whitesmoke" data-text-color="whitesmoke"></a>
+            <div class="tab">
+                Обо мне
             </div>
-            <div class="book__control book__control_background">
-                <span class="color__title">Фон:</span>
-                <a href="" class="color bg_color_black" data-bg-color="black"></a>
-                <a href="" class="color bg_color_gray" data-bg-color="gray"></a>
-                <a href="" class="color bg_color_white color_active" data-bg-color="white"></a>
+            <div class="tab">
+                Контакты
             </div>
         </div>
-        <div class="book__content">
-            <p>
-                Закон внешнего мира философски заполняет гений. Гегельянство, конечно, амбивалентно. Суждение, как следует из вышесказанного, категорически понимает под собой катарсис.
-            </p>
-            <p>
-                Адаптация непредвзято представляет собой закон исключённого третьего. Отвечая на вопрос о взаимоотношении идеального ли и материального ци, Дай Чжень заявлял, что любовь откровенна. Дистинкция непредвзято принимает во внимание закон внешнего мира. Отвечая на вопрос о взаимоотношении идеального ли и материального ци, Дай Чжень заявлял, что закон внешнего мира категорически дискредитирует мир.
-            </p>
-            <p>
-                Знак раскладывает на элементы гравитационный парадокс, открывая новые горизонты. Освобождение амбивалентно. Культ джайнизма включает в себя поклонение Махавире и другим тиртханкарам, поэтому ощущение мира преобразует дедуктивный метод.
-            </p>
+        <div class="tab__contents">
+            <div class="tab__content tab__content_active">
+                <h2>Главная</h2>
+                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem facilis, animi provident sint. Incidunt ea nostrum, nam nulla cupiditate consectetur, alias et labore, porro officia laborum. Velit placeat ipsa atque.</div>
+                <div>Alias rerum repellendus minima error, sit facere. Nulla ipsa doloremque quae libero perspiciatis doloribus ducimus ad optio saepe cum magni minus voluptas aut magnam, accusantium eveniet, quo nesciunt sit quam.</div>
+                <div>Magni delectus laborum laboriosam dicta quibusdam, culpa autem voluptatem doloribus totam vero nisi expedita beatae blanditiis iure labore voluptas perspiciatis minima officiis nam, necessitatibus molestiae veniam consequuntur! Praesentium, eligendi,
+                    nihil!</div>
+                <div>Est impedit facilis minima tempore, sed voluptate error quae praesentium rem eum repellat illum unde, quo dolorum atque consectetur libero cum blanditiis odit assumenda! Quidem recusandae, inventore voluptatum! Unde, natus!</div>
+                <div>Veritatis assumenda ipsam delectus illum rerum, voluptatem quaerat natus dolorum odio adipisci velit a. Minima voluptate quasi fugit ducimus repellat ipsa, accusantium pariatur nisi neque, dolorum ratione mollitia, sunt voluptatem!</div>
+            </div>
+            <div class="tab__content">
+                Я краб!
+            </div>
+            <div class="tab__content">
+                Содержимое в процессе написания. Поищите в Галактике!
+            </div>
         </div>
     </div>
     <script src="task.js"></script>

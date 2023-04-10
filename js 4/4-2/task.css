@@ -1,7 +1,12 @@
-.rotator__case {
-  display: none;
+.symbol {
+  font-size: 50px;
 }
 
-.rotator__case_active {
-  display: inline;
+.symbol_correct {
+  color: green;
+}
+
+.word_incorrect {
+  background: red;
+  color: #fff;
 }
